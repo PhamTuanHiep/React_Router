@@ -1,0 +1,16 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgb(243 239 235);
+    border: 1px solid rgb(156, 155, 153);
+}
+.login label{
+    margin-bottom: 16px;
+}
+.login input{
+    font-size: 16px;
+    padding: 8px;
+}
