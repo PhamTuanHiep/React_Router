@@ -1,8 +1,8 @@
 import "./Component.css";
-function A() {
+function A({ name }) {
   return (
     <>
-      <h2>A</h2>
+      <h2>{!name ? "" : name}</h2>
     </>
   );
 }

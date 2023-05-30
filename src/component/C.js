@@ -1,8 +1,8 @@
 import "./Component.css";
-function C() {
+function C({ name }) {
   return (
     <>
-      <h2>C</h2>
+      <h2>{name}</h2>
     </>
   );
 }

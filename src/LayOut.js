@@ -14,12 +14,12 @@ function LayOut() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/" element={<App name={name} />}>
           <Route
             path="A"
             element={
               <PrivateRoute name={name}>
-                <A />
+                <A name={name} />
               </PrivateRoute>
             }
           />
@@ -28,7 +28,7 @@ function LayOut() {
             path="C"
             element={
               <PrivateRoute name={name}>
-                <C />
+                <C name={name} />
               </PrivateRoute>
             }
           />

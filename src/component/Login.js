@@ -6,14 +6,7 @@ function Login(props) {
   const navigate = useNavigate();
   const handleValidateName = (val) => {
     props.callbackFunc(val);
-    // <Navigate to="/"></Navigate>;
-    handleSuccessLogin();
-  };
-
-  const location = useLocation();
-  const handleSuccessLogin = () => {
-    const { redirectTo } = queryString.parse(location.search);
-    history.push(redirectTo == null ? "/" : redirectTo);
+    navigate(-1);
   };
 
   return (
